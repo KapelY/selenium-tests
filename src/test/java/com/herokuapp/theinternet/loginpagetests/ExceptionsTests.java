@@ -1,28 +1,16 @@
-package com.herokuapp.theinternet;
+package com.herokuapp.theinternet.loginpagetests;
 
+import com.herokuapp.theinternet.base.BaseTest;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class ExceptionsTests {
-    private WebDriver driver;
-
-    @BeforeMethod
-    public void setUp() {
-        driver = new ChromeDriver();
-
-        driver.get("https://practicetestautomation.com/practice-test-exceptions/");
-        driver.manage().window().maximize();
-    }
+public class ExceptionsTests extends BaseTest {
 
     @Test
     public void homeworkTest() {
@@ -54,10 +42,5 @@ public class ExceptionsTests {
 
         WebElement confirmation = driver.findElement(By.id("confirmation"));
         Assert.assertEquals(confirmation.getText(), "Row 2 was saved", "confirmation is not as expected");
-    }
-
-    @AfterMethod
-    public void tearDown() {
-        driver.quit();
     }
 }

@@ -1,17 +1,15 @@
-package com.herokuapp.theinternet;
+package com.herokuapp.theinternet.loginpagetests;
 
+import com.herokuapp.theinternet.base.BaseTest;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class PositiveTests {
+public class PositiveLogInTests extends BaseTest {
 
     @Test
     public void loginTest() {
-        WebDriver driver = new ChromeDriver();
 
         driver.get("https://the-internet.herokuapp.com/login");
         driver.manage().window().maximize();
