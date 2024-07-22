@@ -1,12 +1,12 @@
 package com.herokuapp.theinternet.loginpagetests;
 
-import com.herokuapp.theinternet.base.BaseTest;
+import com.herokuapp.theinternet.base.TestUtilities;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class NegativeLogInTests extends BaseTest {
+public class NegativeLogInTests extends TestUtilities {
 
     @Test
     public void incorrectUserNameTest() {

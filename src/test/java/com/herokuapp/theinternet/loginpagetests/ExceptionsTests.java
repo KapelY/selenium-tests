@@ -1,6 +1,6 @@
 package com.herokuapp.theinternet.loginpagetests;
 
-import com.herokuapp.theinternet.base.BaseTest;
+import com.herokuapp.theinternet.base.TestUtilities;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class ExceptionsTests extends BaseTest {
+public class ExceptionsTests extends TestUtilities {
 
     @Test
     public void homeworkTest() {
